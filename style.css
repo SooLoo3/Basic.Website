@@ -1,0 +1,143 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;  
+    background-color: #f9f9f9;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-mono-400 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-mono-500 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-mono-600 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+a.hover{
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    border-bottom: 2px solid red;
+}
+
+#desktiop-section {
+    display: none;
+}
+
+nav {
+    opacity: 0;
+    display: none;
+    position:absolute;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+header button {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  border: 1px solid black;
+}
+
+nav ul li {
+    border: 1px solid white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+nav ul li a:hover{
+    background-color: #444;
+}
+
+nav ul li a:active{
+    background-color: #e01c1c;
+}
+
+/*Tablet*/
+@media screen and (min-width: 760px) and (max-width: 1020px) {
+    section {
+        display: inline-block;
+        width: 45%;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1400px) {
+
+    nav {
+        display: block;
+        opacity: 1;
+        position: relative;
+        text-align: left;
+    }
+
+    nav ul li {
+            border: none;
+        }
+
+    section{ 
+        display: inline-block;
+        width: 30%; 
+    }
+
+    #desktop-section{
+        display: inline-block;
+
+    }
+
+    header button {
+        display: none;
+    }
+
+    nav ul { 
+        opacity: 1;
+        display: block;
+    }
+
+    nav ul li {
+            display: inline-block;
+        }
+     
+    
+    
+}
