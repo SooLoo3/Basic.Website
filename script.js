@@ -14,3 +14,18 @@ function toggleMenu(evt) {
         nav.style.opacity = 1;
     }
 }
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    //prevent default for submision
+    event.preventDefault();
+
+    //collect form data
+    const firstname = document.querySelector("#fname").value;
+
+    //log form data to console
+    console.log('Form submitted : $(firstnName) $(lastName)');
+
+    //reset form
+    document.getElementById("contactForm").reset();
+
+});
