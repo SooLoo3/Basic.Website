@@ -5,19 +5,20 @@
         <style>
              @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
-        <link rel="stylesheet" type="type/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Contact Us</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li> 
-            </ul>
-        </nav>
-        
+        <header>
+            <nav id="nav-list">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav> 
+            <button type="button" onclick="toggleMenu(event)">=</button>
+        </header>
         <h1>Contact Us</h1>
         <form id="contactForm">
             <label for="fname">First name:</label><br />
