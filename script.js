@@ -1,7 +1,9 @@
 function toggleMenu(evt) {
     console.log('evt', evt);
-    let nav = document.querySelector("#nav-list");
+    const nav = document.querySelector("#nav-list");
     console.log('nav', nav);
+    if (!nav) return; 
+    nav.classList.toggle('open');
     if (nav.style.display === "block") {
         evt.target.innerText = "=";
         nav.style.display = "none";
