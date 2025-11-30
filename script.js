@@ -17,7 +17,7 @@ function toggleMenu(evt) {
     }
 }
 
-document.getElementById("contactForm").addEventListener("submit", function () {
+document.getElementById("contactForm").addEventListener("submit", function() {
     
     var contactForm = document.getElementById("contactForm");
     if (contactForm) {
